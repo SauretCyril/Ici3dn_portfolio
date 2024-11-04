@@ -1,0 +1,344 @@
+<html><head><base href="https://ici3dn.fr/IcI3Dn/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IcI3Dn</title>
+<style>
+body {
+  font-family: 'Verdana', Helvetica, Arial, sans-serif;
+  line-height: 1.7em;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+}
+.container {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+header {
+  background-color: #ffffff;
+  box-shadow: 0 0 7px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.logo img {
+  max-height: 150px;
+  height:100px;
+  width: auto;
+}
+.header-title {
+  color: #295af0;
+  font-size: 24px;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+nav {
+  margin-left: auto;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin-left: 22px;
+}
+nav ul li a {
+  color: rgba(0,0,0,0.6);
+  text-decoration: none;
+  font-size: 14px;
+}
+.hero {
+  background-color: #f4f4f4;
+  padding: 120px 0 60px;
+  text-align: center;
+}
+h1, h2, h3 {
+  color: #295af0;
+}
+.subtitle {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 50px auto;
+}
+.card {
+  width: calc(16.666% - 20px);
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+.card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+.content-section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content-text {
+  flex-basis: 45%;
+}
+.content-media {
+  flex-basis: 50%;
+}
+.about-section, .contact-section {
+  padding: 60px 0;
+}
+footer {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px 0;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <img src="https://ici3dn.fr/IcI3Dn/wp-content/uploads/2023/12/cropped-Logo_Ici3dn_youtub-32x32.png" alt="IcI3Dn Logo">
+      </div>
+      <h1 class="header-title">La solution ICI3DN</h1>
+     <!--  <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#apropos">A propos</a></li>
+          <li><a href="#mejoindre">Me joindre</a></li>
+        </ul>
+      </nav> -->
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <p class="subtitle">Ici3Dn est un outil de développement d'application 3D qui transforme la manière d'étudier ou de présenter vos données.</p>
+      </div>
+    </section>
+
+    <section class="card-section container">
+      <div class="card" onclick="location.href='#se-deplacer';">
+        <img src="https://ici3dn.fr/IcI3Dn/wp-content/uploads/2024/01/Se_deplacer_sepia_s.png" alt="Se déplacer">
+        <div class="card-content">
+          <h3>Se déplacer</h3>
+        </div>
+      </div>
+      <div class="card" onclick="location.href='#les-donnees';">
+        <img src="https://ici3dn.fr/IcI3Dn/wp-content/uploads/2024/01/data_sepia_s.png" alt="Les données">
+        <div class="card-content">
+          <h3>Les données</h3>
+        </div>
+      </div>
+      <div class="card" onclick="location.href='#interface';">
+        <img src="https://ici3dn.fr/IcI3Dn/wp-content/uploads/2024/01/ecran_sepia_s.png" alt="L'interface">
+        <div class="card-content">
+          <h3>L'interface</h3>
+        </div>
+      </div>
+      <div class="card" onclick="location.href='#donner-vie';">
+        <img src="https://ici3dn.fr/IcI3Dn/wp-content/uploads/2024/01/Donner_vie_sepia_s.png" alt="Donner vie">
+        <div class="card-content">
+          <h3>Donner vie</h3>
+        </div>
+      </div>
+      <div class="card" onclick="location.href='#mesurer';">
+        <img src="https://ici3dn.fr/IcI3Dn/wp-content/uploads/2024/01/Mesurer_sepia_s.png" alt="Mesurer">
+        <div class="card-content">
+          <h3>Mesurer</h3>
+        </div>
+      </div>
+      <div class="card" onclick="location.href='#collaborer';">
+        <img src="https://ici3dn.fr/IcI3Dn/wp-content/uploads/2024/01/Import_sepia_s.png" alt="Collaborer">
+        <div class="card-content">
+          <h3>Collaborer</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="interface" class="content-section">
+      <div class="container content-container">
+        <div class="content-text">
+          <h2>L'interface applicative</h2>
+          <p>L'interface graphique est simple et épurée. Elle est paramétrable, ce qui permet de créer des écrans utilisateurs rapidement tout en manipulant une grande quantité de données. L'architecture de l'application est structurée de manière à pouvoir intégrer des modules de développement. Chaque module est défini par un périmètre fonctionnel précis et peut interagir avec les autres, évoluer et remplacer les modules fonctionnels existants.</p>
+          <p><em>15 ans de savoir-faire en matière d'édition ERP mis au service du moteur d'Ici3Dn !</em></p>
+        </div>
+        <div class="content-media">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/pLERN065r68" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="collaborer" class="content-section">
+      <div class="container content-container">
+        <div class="content-text">
+          <h2>Collaborer : avec les logiciels spécialisés</h2>
+          <p>L'une de mes missions principales était d'intégrer une fonctionnalité d'importation de données géospatiales. Malheureusement, Cesium ne m'offrait pas cette possibilité. Pour y remédier, j'ai eu recours à deux développements tiers et ainsi créer un module dédié à cette fonctionnalité. Ici3Dn a été conçu pour accueillir facilement des modules tiers, ce qui permet d'anticiper les besoins futurs. Tout cela, bien sûr, dans le respect des licences et des achats nécessaires dans l'écosystème d'Epic qui est abordable.</p>
+          <p><em>Faciliter l'intégration de modules tiers pour répondre aux besoins futurs ou les anticiper.</em></p>
+        </div>
+        <div class="content-media">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/S5tsCBPKQTE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="les-donnees" class="content-section">
+      <div class="container content-container">
+        <div class="content-text">
+          <h2>Intégrer vos données 3D</h2>
+          <p>L'objectif d'Ici3Dn est de pouvoir traiter l'ensemble des différents formats standards disponibles en fonction de l'évolution des technologies. Il est possible:</p>
+          <ul>
+            <li>D'intégrer le/les modèle(s) à l'applicatif,</li>
+            <li>D'importer dynamiquement en local,</li>
+            <li>De traiter un modèle dans le cloud sécurisé (Ici nous sommes sur Cesium),</li>
+            <li>D'établir un pipeline pour du temps réel (possible avec Datasmith)</li>
+          </ul>
+          <p><em>Un des prérequis essentiels pour Ici3Dn est de ne pas modifier les modèles existants afin de maintenir un flux de travail efficace.</em></p>
+        </div>
+        <div class="content-media">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/IDB-fSoIqJo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="se-deplacer" class="content-section">
+      <div class="container content-container">
+        <div class="content-text">
+          <h2>Différents modes de déplacement pour accroître l'immersion</h2>
+          <p>Il est possible de changer facilement le mode d'interaction ou de déplacement selon vos besoins pendant l'utilisation. Le mode « marcher » permet de simuler une personne avec son mannequin, offrant un degré de liberté immersif. L'utilisateur peut également voyager vers des lieux géolocalisés à l'aide du programme tiers « Cesium for Unreal » intégré par défaut. Un autre programme tiers, « Argis for Unreal », est également disponible.</p>
+          <p><em>L'une des idées fortes derrière la solution Ici3Dn était de s'affranchir des limitations des modes de déplacement et d'interaction</em></p>
+        </div>
+        <div class="content-media">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ZoD3FB9HXJI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="donner-vie" class="content-section">
+      <div class="container content-container">
+        <div class="content-text">
+          <h2>Donner vie à votre environnement 3D</h2>
+          <p>Ici3Dn est un outil qui permet d'étudier et de présenter des données de manière dynamique, en offrant des fonctions de gestion de calques, de simulation et de contrôle. Il permet également une immersion en réalité virtuelle.</p>
+          <p>Le Noyau d'Ici3Dn assure une gestion cohérente et fiable, notamment :</p>
+          <ul>
+            <li>Des modules fonctionnels (Briques applicatives) remplaçables et interchangeables.</li>
+            <li>La communication entre les modules et l'IHM (écran, boutons, tableaux...).</li>
+            <li>L'intégration du paramétrage pour créer la solution finale.</li>
+          </ul>
+          <p><em>Une solution adaptée aux enjeux actuels : une mise en œuvre rapide, ergonomiquement sobre, fiable et évolutive</em></p>
+        </div>
+        <div class="content-media">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/OFauNK6G6eI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="mesurer" class="content-section">
+      <div class="container content-container">
+        <div class="content-text">
+          <h2>Pas d'étude sans 'mesures' !</h2>
+          <p>L'objectif principal d'Ici3Dn est de développer des applications destinées aux bureaux d'études de génie civil, de mécanique et d'environnement. La solution permet de géolocaliser précisément des points, des lignes, et des mesures, des composants de vos 3D... n'importe où sur terre.</p>
+          <p>Les mesures peuvent être :</p>
+          <ul>
+            <li>déterminées à partir de modèles 3D tracés par les projeteurs,</li>
+            <li>créées et gérées par l'utilisateur Ici3Dn,</li>
+            <li>issues de fichiers de données géospatiales provenant d'Argis ou de Qjis,</li>
+            <li>calculées indépendamment puis intégrées</li>
+            <li>ou encore calculées en temps réel.</li>
+          </ul>
+          <p>Ici3D est conçu pour être la prochaine génération des applications professionnelles qui intègre les données d'études dans des environnements de plus en plus réalistes, en utilisant les dernières technologies disponibles, à l'aide d'Unreal Engine (Epic)</p>
+        </div>
+        <div class="content-media">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/LIhBsRXoDRY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="apropos" class="about-section">
+      <div class="container">
+        <h2>Qui je suis ?</h2>
+        <div class="content-container">
+          <div class="content-text">
+            <p>Permettez-moi de me présenter : en tant que créateur d'applications, j'ai acquis plus de 15 ans d'expériences en tant que responsable de projet, analyste et développeur. Ma motivation n'est pas seulement la création d'applications, mais également l'ensemble du processus, incluant la conception, la création, la maintenance et l'évolution. Ma passion réside dans la méthodologie qui est peut-être une conséquence directe de mon expérience professionnelle, de ma personnalité.</p>
+            <p>Mon intérêt pour le codage a débuté avec la réalisation d'un jeu en 3D sur un Amstrad CPC464</p>
+            <p>Mon tout premier développement était un programme de comptabilité, alors que je me trouvais en DUT. À l'époque, le langage était DBase 3.</p>
+            <p>La crise sanitaire du Covid-19 a été le déclencheur pour la conception d'Ici3Dn – une solution de développement novatrice incluant un E.R.P. tourné vers les technologies 3D BIM. Au fil du développement, j'ai ajouté la gestion des données géospatiales pour créer un SIG complet.</p>
+            <p>Au plaisir d'échanger sur vos projets, études, ou de toute potentielle collaboration qui pourrait en découler.</p>
+            <p style="text-align: right;">Cyril SAURET</p>
+          </div>
+          <div class="content-media">
+            <img src="https://ici3dn.fr/IcI3Dn/wp-content/uploads/2023/12/profile_malt.png" alt="Cyril SAURET" style="max-width: 100%; height: auto;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mejoindre" class="contact-section">
+      <div class="container">
+        <h2>Me contacter</h2>
+        <div class="content-container">
+          <div class="content-text">
+            <h3>Mes coordonnées</h3>
+            <p>Email : contact@ici3dn.fr</p>
+            <p>Téléphone : 07.86.09.87.81</p>
+            <div class="social-links">
+              <a href="https://www.facebook.com/Ici3dn" target="_blank">Facebook</a>
+              <a href="https://www.youtube.com/channel/UCqtxPxSI7Kx_tZeqIzpcD-g" target="_blank">YouTube</a>
+              <a href="https://www.linkedin.com/in/cyril-sauret-00586295" target="_blank">LinkedIn</a>
+              <a href="https://www.instagram.com/cyrilsauret/" target="_blank">Instagram</a>
+            </div>
+          </div>
+          <div class="content-media">
+            <!-- Calendly inline widget begin -->
+            <div class="calendly-inline-widget" data-url="https://calendly.com/sauretcyril/30min" style="min-width:320px;height:630px;"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            <!-- Calendly inline widget end -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>©Ici3Dn 2022 | avec DIVI Elegant Themes | Propulsé par WordPress</p>
+    </div>
+  </footer>
+</body>
+</html>
